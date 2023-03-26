@@ -1,0 +1,323 @@
+/* Set font family and color */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+  margin-left: 20px;
+  display: inline;
+} */
+
+/* 
+.container {
+  max-width: -40vw;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: inline;
+  margin-right: 40vw;
+} */
+
+.container {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 0 16px;
+  margin-left: 1%;
+  display: inline;
+}
+
+.right-box {
+  display: none;
+  position: fixed;
+  top: 250px;
+  right: 20px;
+  width: 750px;
+  height: 400px;
+  background-color: red;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+/* Style the tweet cards */
+.tweet-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+/* Style the tweet text */
+.tweet-text {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Style the tweet user */
+.tweet-user {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1a0dab;
+  margin-bottom: 8px;
+}
+
+/* Style the tweet timestamp */
+.tweet-timestamp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+/* Style the search button */
+.search-button {
+  border: none;
+  background-color: #1a0dab;
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: #0c2c6f;
+}
+
+/* Style the links */
+a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style the search results */
+.search-results {
+  margin-top: 24px;
+}
+
+/* Style the search result title */
+.search-result-title {
+  color: #1a0dab;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+/* Style the search result snippet */
+.search-result-snippet {
+  color: #545454;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Style the search result URL */
+.search-result-url {
+  color: #006621;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Style the "feeling lucky" button */
+.feeling-lucky-button {
+  border: none;
+  background-color: transparent;
+  color: #1a0dab;
+  font-size: 14px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+/* Style the footer */
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer a {
+  color: #70757a;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Style the mobile menu */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 9999;
+  padding: 24px;
+}
+
+.mobile-menu .close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #70757a;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-menu .close-button:hover {
+  color: #1a0dab;
+}
+
+.mobile-menu a {
+  display: block;
+  margin-bottom: 24px;
+  color: #1a0dab;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Center container and limit width */
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  /* Style the search button */
+  .search-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 16px;
+  }
+
+  /* Style the tweet cards */
+  .tweet-card {
+    padding: 12px;
+  }
+
+  /* Style the tweet text */
+  .tweet-text {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  /* Style the tweet user */
+  .tweet-user {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  /* Style the tweet timestamp */
+  .tweet-timestamp {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  /* Style the "feeling lucky" button */
+  .feeling-lucky-button {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  /* Style the mobile menu */
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.search-results {
+  margin-top: 24px;
+}
+
+.search-result {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.search-result-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0000FF;
+  margin-bottom: 8px;
+  
+}
+
+.search-result-snippet {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.search-result-geolocation {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.search-result-geolocation span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* .map-container {
+  display: block;
+  position: fixed;
+  top: 130px;
+  right: -24px;
+  width: 750px;
+  padding: 20px;
+  height: 800px;
+  opacity: 0;
+} */
+
+.map-container {
+  display: block;
+  position: fixed;
+  top: 18%;
+  right: 1%;
+  width: 45%;
+  padding: 20px;
+  height: 70%;
+  opacity: 0;
+}
+
+
+.test {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f5f5f5;
+  
+}
