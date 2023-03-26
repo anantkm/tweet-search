@@ -1,4 +1,4 @@
-# IR Final Report - Team 10
+
 
 # CS 242: Information Retrieval & Web Search
 
